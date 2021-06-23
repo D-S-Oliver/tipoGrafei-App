@@ -17,6 +17,7 @@
 		A75345D12679457A0039D20B /* TypeConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345D02679457A0039D20B /* TypeConcept.swift */; };
 		A75345D3267A47330039D20B /* TipografeiTema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345D2267A47330039D20B /* TipografeiTema.swift */; };
 		A75345D5267A4A7B0039D20B /* FooterSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345D4267A4A7B0039D20B /* FooterSearchBar.swift */; };
+		BABBD9BA2683D0B100F07922 /* FontInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABBD9B92683D0B100F07922 /* FontInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,10 @@
 		A75345C62679119C0039D20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A75345C82679119C0039D20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A75345CE26791D6D0039D20B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		A75345D02679457A0039D20B /* TypeConcept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TypeConcept.swift; path = CaciqueAppZero/TypeConcept.swift; sourceTree = SOURCE_ROOT; };
+		A75345D02679457A0039D20B /* TypeConcept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TypeConcept.swift; path = CaciqueAppZero/ResultsScreen/Models/TypeConcept.swift; sourceTree = SOURCE_ROOT; };
 		A75345D2267A47330039D20B /* TipografeiTema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipografeiTema.swift; sourceTree = "<group>"; };
 		A75345D4267A4A7B0039D20B /* FooterSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterSearchBar.swift; sourceTree = "<group>"; };
+		BABBD9B92683D0B100F07922 /* FontInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +66,124 @@
 		A75345B92679119A0039D20B /* CaciqueAppZero */ = {
 			isa = PBXGroup;
 			children = (
-				A75345D02679457A0039D20B /* TypeConcept.swift */,
-				A75345CE26791D6D0039D20B /* DetailViewController.swift */,
-				A75345BE2679119A0039D20B /* tableViewController.swift */,
+				BABBD9B82683D06E00F07922 /* Models */,
+				BABBD9C52683D39A00F07922 /* LaunchScreen */,
+				BABBD9BD2683D10A00F07922 /* FilterScreen */,
+				BABBD9BB2683D0C600F07922 /* ResultsScreen */,
+				BABBD9BE2683D13100F07922 /* FontScreen */,
 				A75345C02679119A0039D20B /* Main.storyboard */,
 				A75345C32679119C0039D20B /* Assets.xcassets */,
 				A75345BA2679119A0039D20B /* AppDelegate.swift */,
 				A75345D2267A47330039D20B /* TipografeiTema.swift */,
-				A75345C52679119C0039D20B /* LaunchScreen.storyboard */,
 				A75345C82679119C0039D20B /* Info.plist */,
 				A75345D4267A4A7B0039D20B /* FooterSearchBar.swift */,
 				A75345BC2679119A0039D20B /* SceneDelegate.swift */,
 			);
 			path = CaciqueAppZero;
+			sourceTree = "<group>";
+		};
+		BABBD9B82683D06E00F07922 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BABBD9B92683D0B100F07922 /* FontInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BABBD9BB2683D0C600F07922 /* ResultsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BABBD9C72683D47200F07922 /* Models */,
+				BABBD9C12683D26600F07922 /* ViewControllers */,
+				BABBD9C22683D26E00F07922 /* Views */,
+			);
+			path = ResultsScreen;
+			sourceTree = "<group>";
+		};
+		BABBD9BD2683D10A00F07922 /* FilterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BABBD9BF2683D22A00F07922 /* ViewControllers */,
+				BABBD9C02683D23800F07922 /* Views */,
+			);
+			path = FilterScreen;
+			sourceTree = "<group>";
+		};
+		BABBD9BE2683D13100F07922 /* FontScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BABBD9C32683D27700F07922 /* ViewControllers */,
+				BABBD9C42683D28100F07922 /* Views */,
+			);
+			path = FontScreen;
+			sourceTree = "<group>";
+		};
+		BABBD9BF2683D22A00F07922 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BABBD9C02683D23800F07922 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BABBD9C12683D26600F07922 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A75345BE2679119A0039D20B /* tableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BABBD9C22683D26E00F07922 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BABBD9C32683D27700F07922 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A75345CE26791D6D0039D20B /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BABBD9C42683D28100F07922 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BABBD9C52683D39A00F07922 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BABBD9C62683D45200F07922 /* Views */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		BABBD9C62683D45200F07922 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A75345C52679119C0039D20B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BABBD9C72683D47200F07922 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A75345D02679457A0039D20B /* TypeConcept.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +260,7 @@
 				A75345BB2679119A0039D20B /* AppDelegate.swift in Sources */,
 				A75345D5267A4A7B0039D20B /* FooterSearchBar.swift in Sources */,
 				A75345BD2679119A0039D20B /* SceneDelegate.swift in Sources */,
+				BABBD9BA2683D0B100F07922 /* FontInfo.swift in Sources */,
 				A75345D12679457A0039D20B /* TypeConcept.swift in Sources */,
 				A75345D3267A47330039D20B /* TipografeiTema.swift in Sources */,
 				A75345CF26791D6D0039D20B /* DetailViewController.swift in Sources */,
