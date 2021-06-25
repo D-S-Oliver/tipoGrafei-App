@@ -15,9 +15,9 @@
 		A75345C72679119C0039D20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75345C52679119C0039D20B /* LaunchScreen.storyboard */; };
 		A75345CF26791D6D0039D20B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345CE26791D6D0039D20B /* DetailViewController.swift */; };
 		A75345D3267A47330039D20B /* TipografeiTema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345D2267A47330039D20B /* TipografeiTema.swift */; };
-		A75345D5267A4A7B0039D20B /* FooterSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345D4267A4A7B0039D20B /* FooterSearchBar.swift */; };
 		BA23EE3C2685170B00CD4CF3 /* TypeConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA23EE3B2685170B00CD4CF3 /* TypeConcept.swift */; };
 		BABBD9BA2683D0B100F07922 /* FontInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABBD9B92683D0B100F07922 /* FontInfo.swift */; };
+		BAD8586D268640DB009A29AA /* FormModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD8586C268640DB009A29AA /* FormModal.storyboard */; };
 		BAF959D7268514D1004B0064 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF959D5268514D1004B0064 /* DetailView.storyboard */; };
 		BAF959D9268514ED004B0064 /* MainTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF959D8268514ED004B0064 /* MainTableView.storyboard */; };
 /* End PBXBuildFile section */
@@ -33,9 +33,9 @@
 		A75345C82679119C0039D20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A75345CE26791D6D0039D20B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A75345D2267A47330039D20B /* TipografeiTema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipografeiTema.swift; sourceTree = "<group>"; };
-		A75345D4267A4A7B0039D20B /* FooterSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterSearchBar.swift; sourceTree = "<group>"; };
 		BA23EE3B2685170B00CD4CF3 /* TypeConcept.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeConcept.swift; sourceTree = "<group>"; };
 		BABBD9B92683D0B100F07922 /* FontInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInfo.swift; sourceTree = "<group>"; };
+		BAD8586C268640DB009A29AA /* FormModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormModal.storyboard; sourceTree = "<group>"; };
 		BAF959D6268514D1004B0064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CaciqueAppZero/Base.lproj/DetailView.storyboard; sourceTree = "<group>"; };
 		BAF959D8268514ED004B0064 /* MainTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTableView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,13 +74,11 @@
 				BABBD9C52683D39A00F07922 /* LaunchScreen */,
 				BABBD9BB2683D0C600F07922 /* MainTableScreen */,
 				BABBD9BE2683D13100F07922 /* FontScreen */,
-				BABBD9BD2683D10A00F07922 /* FormModal */,
 				A75345C02679119A0039D20B /* Main.storyboard */,
 				A75345C32679119C0039D20B /* Assets.xcassets */,
 				A75345BA2679119A0039D20B /* AppDelegate.swift */,
 				A75345D2267A47330039D20B /* TipografeiTema.swift */,
 				A75345C82679119C0039D20B /* Info.plist */,
-				A75345D4267A4A7B0039D20B /* FooterSearchBar.swift */,
 				A75345BC2679119A0039D20B /* SceneDelegate.swift */,
 			);
 			path = CaciqueAppZero;
@@ -104,15 +102,6 @@
 			path = MainTableScreen;
 			sourceTree = "<group>";
 		};
-		BABBD9BD2683D10A00F07922 /* FormModal */ = {
-			isa = PBXGroup;
-			children = (
-				BABBD9BF2683D22A00F07922 /* ViewControllers */,
-				BABBD9C02683D23800F07922 /* Views */,
-			);
-			path = FormModal;
-			sourceTree = "<group>";
-		};
 		BABBD9BE2683D13100F07922 /* FontScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,20 +109,6 @@
 				BABBD9C42683D28100F07922 /* Views */,
 			);
 			path = FontScreen;
-			sourceTree = "<group>";
-		};
-		BABBD9BF2683D22A00F07922 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		BABBD9C02683D23800F07922 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		BABBD9C12683D26600F07922 /* ViewControllers */ = {
@@ -148,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				BAF959D8268514ED004B0064 /* MainTableView.storyboard */,
+				BAD8586C268640DB009A29AA /* FormModal.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +227,7 @@
 			files = (
 				A75345C72679119C0039D20B /* LaunchScreen.storyboard in Resources */,
 				A75345C42679119C0039D20B /* Assets.xcassets in Resources */,
+				BAD8586D268640DB009A29AA /* FormModal.storyboard in Resources */,
 				BAF959D7268514D1004B0064 /* DetailView.storyboard in Resources */,
 				A75345C22679119A0039D20B /* Main.storyboard in Resources */,
 				BAF959D9268514ED004B0064 /* MainTableView.storyboard in Resources */,
@@ -266,7 +243,6 @@
 			files = (
 				A75345BF2679119A0039D20B /* MainTableViewController.swift in Sources */,
 				A75345BB2679119A0039D20B /* AppDelegate.swift in Sources */,
-				A75345D5267A4A7B0039D20B /* FooterSearchBar.swift in Sources */,
 				A75345BD2679119A0039D20B /* SceneDelegate.swift in Sources */,
 				BABBD9BA2683D0B100F07922 /* FontInfo.swift in Sources */,
 				BA23EE3C2685170B00CD4CF3 /* TypeConcept.swift in Sources */,

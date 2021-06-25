@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TableViewController" customModule="tipoGrafei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="NewView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K9L-JR-hED">
-                                <rect key="frame" x="0.0" y="88" width="414" height="720"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="788"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCells" id="FgV-88-nvw">
@@ -32,27 +33,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU6-kV-LN9" userLabel="FooterSearchBar" customClass="FooterSearchBar" customModule="tipoGrafei" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="778" width="414" height="65"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="bek-9N-fgQ"/>
-                                    <constraint firstAttribute="height" constant="65" id="kIA-1V-cuU"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="rJC-Kl-lfk"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-le-bvD">
+                                <rect key="frame" x="0.0" y="848" width="414" height="30"/>
+                                <state key="normal" title="Match"/>
+                                <connections>
+                                    <segue destination="7aX-2V-hp5" kind="presentation" id="GqI-YK-Me6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JU6-kV-LN9" secondAttribute="bottom" constant="19" id="GYJ-lq-DpG"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="St8-NQ-pvN"/>
-                            <constraint firstItem="JU6-kV-LN9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iHl-ru-fXv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JU6-kV-LN9" secondAttribute="trailing" id="mVE-dR-H6J"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ps2-cc-R4R"/>
-                            <constraint firstItem="JU6-kV-LN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ur5-Yb-hK8"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wUQ-Vr-s8E"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yEl-3h-eMX"/>
+                            <constraint firstItem="K9L-JR-hED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8ol-ys-75J"/>
+                            <constraint firstItem="0Pq-le-bvD" firstAttribute="top" secondItem="K9L-JR-hED" secondAttribute="bottom" constant="16" id="WPr-RS-UYS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Pq-le-bvD" secondAttribute="trailing" id="Xg0-kI-vW3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9L-JR-hED" secondAttribute="trailing" id="e6l-jO-Vnl"/>
+                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kaB-4I-n4c"/>
+                            <constraint firstItem="0Pq-le-bvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s2o-3l-W0U"/>
+                            <constraint firstItem="0Pq-le-bvD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="16" id="sPs-yQ-dne"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Yh0-d8-dDo">
@@ -74,8 +72,6 @@
                         </view>
                     </navigationItem>
                     <connections>
-                        <outlet property="footer" destination="JU6-kV-LN9" id="sx1-xR-sB7"/>
-                        <outlet property="footerBottomConstraint" destination="JU6-kV-LN9" id="U2c-Z3-wbn"/>
                         <outlet property="tableView" destination="K9L-JR-hED" id="sAj-Ic-Amv"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="VcL-a8-4H4"/>
                     </connections>
@@ -93,6 +89,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgZ-BI-sBN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1868.1159420289857" y="105.80357142857143"/>
+        </scene>
+        <!--FormModal-->
+        <scene sceneID="VVm-eP-8qd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FormModal" id="7aX-2V-hp5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cll-o2-sFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="578"/>
         </scene>
     </scenes>
     <resources>

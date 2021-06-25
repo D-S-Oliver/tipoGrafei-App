@@ -11,7 +11,6 @@ import UIKit
 class TableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var footer: FooterSearchBar!
     @IBOutlet weak var footerBottomConstraint: NSLayoutConstraint!
     
     var concepts: [TypeConcept] = []
@@ -75,10 +74,8 @@ extension TableViewController: UITableViewDelegate{
         
         performSegue(withIdentifier: "presentDetailSegue", sender: self)
         if isFiltering {
-            footer.setIsFilteringToShow(filteredItemCount: filteredConcepts.count, of: concepts.count)
             return filteredConcepts.count
         }
-        footer.setNotFiltering()
         return concepts.count
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -96,10 +93,9 @@ extension TableViewController: UITableViewDelegate{
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             
             if isFiltering {
-                footer.setIsFilteringToShow(filteredItemCount: filteredConcepts.count, of: concepts.count)
                 return filteredConcepts.count}
             
-            footer.setNotFiltering()
+            
             return concepts.count
         }
     
