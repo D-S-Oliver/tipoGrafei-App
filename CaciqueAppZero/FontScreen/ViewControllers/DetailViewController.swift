@@ -14,7 +14,6 @@ class DetailViewController: UIViewController{
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tituloTipos: UILabel!
-    @IBOutlet weak var detailImage: UIImageView!
     
     
     override func viewDidLoad() {
@@ -26,7 +25,7 @@ class DetailViewController: UIViewController{
         self.navigationController?.title = conceito?.title
         tituloTipos.text = conceito?.title
         tituloTipos.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        detailImage.image = conceito?.image
+    
         
         //UIImage(named: "lexico")
 //        let htmlString = concept?.text ?? "teste"

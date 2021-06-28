@@ -27,9 +27,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Qhm-IR-zuN" kind="show" identifier="presentDetailSegue" id="yl7-BR-5fp"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -74,6 +71,7 @@
                     <connections>
                         <outlet property="tableView" destination="K9L-JR-hED" id="sAj-Ic-Amv"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="VcL-a8-4H4"/>
+                        <segue destination="Qhm-IR-zuN" kind="show" identifier="presentDetailSegue" id="hh6-De-pgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
