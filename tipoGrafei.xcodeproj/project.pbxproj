@@ -94,7 +94,7 @@
 				BABBD9B82683D06E00F07922 /* Models */,
 				BABBD9C52683D39A00F07922 /* LaunchScreen */,
 				BABBD9BB2683D0C600F07922 /* MainTableScreen */,
-				BABBD9BE2683D13100F07922 /* FontScreen */,
+				BABBD9BE2683D13100F07922 /* DetailScreen */,
 				A75345C02679119A0039D20B /* Main.storyboard */,
 				A75345C32679119C0039D20B /* Assets.xcassets */,
 				A75345BA2679119A0039D20B /* AppDelegate.swift */,
@@ -132,13 +132,13 @@
 			path = MainTableScreen;
 			sourceTree = "<group>";
 		};
-		BABBD9BE2683D13100F07922 /* FontScreen */ = {
+		BABBD9BE2683D13100F07922 /* DetailScreen */ = {
 			isa = PBXGroup;
 			children = (
 				BABBD9C32683D27700F07922 /* ViewControllers */,
 				BABBD9C42683D28100F07922 /* Views */,
 			);
-			path = FontScreen;
+			path = DetailScreen;
 			sourceTree = "<group>";
 		};
 		BABBD9C12683D26600F07922 /* ViewControllers */ = {
