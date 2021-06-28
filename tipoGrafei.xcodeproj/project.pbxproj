@@ -15,9 +15,19 @@
 		A75345C72679119C0039D20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75345C52679119C0039D20B /* LaunchScreen.storyboard */; };
 		A75345CF26791D6D0039D20B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345CE26791D6D0039D20B /* DetailViewController.swift */; };
 		A75345D3267A47330039D20B /* TipografeiTema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75345D2267A47330039D20B /* TipografeiTema.swift */; };
+		BA11BA92268A6A2B004499CA /* FirstFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11BA91268A6A2B004499CA /* FirstFormViewController.swift */; };
+		BA11BA94268A6A3E004499CA /* SecondFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11BA93268A6A3E004499CA /* SecondFormViewController.swift */; };
+		BA11BA96268A6C13004499CA /* ResultFormView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA11BA95268A6C13004499CA /* ResultFormView.storyboard */; };
+		BA11BA98268A6C29004499CA /* ResultFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11BA97268A6C29004499CA /* ResultFormViewController.swift */; };
 		BA23EE3C2685170B00CD4CF3 /* TypeConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA23EE3B2685170B00CD4CF3 /* TypeConcept.swift */; };
+		BA568534268799E3002B4A63 /* FormDataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA568533268799E3002B4A63 /* FormDataSingleton.swift */; };
+		BA56853626879DDE002B4A63 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56853526879DDE002B4A63 /* FontFamily.swift */; };
+		BA5685392687AE56002B4A63 /* FontsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5685382687AE56002B4A63 /* FontsDatabase.swift */; };
 		BABBD9BA2683D0B100F07922 /* FontInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABBD9B92683D0B100F07922 /* FontInfo.swift */; };
 		BAD8586D268640DB009A29AA /* FormModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD8586C268640DB009A29AA /* FormModal.storyboard */; };
+		BAD8586F268661A4009A29AA /* FormModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD8586E268661A4009A29AA /* FormModalViewController.swift */; };
+		BAD858712686691A009A29AA /* FirstFormView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD858702686691A009A29AA /* FirstFormView.storyboard */; };
+		BAD8587326866951009A29AA /* SecondFormView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD8587226866951009A29AA /* SecondFormView.storyboard */; };
 		BAF959D7268514D1004B0064 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF959D5268514D1004B0064 /* DetailView.storyboard */; };
 		BAF959D9268514ED004B0064 /* MainTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF959D8268514ED004B0064 /* MainTableView.storyboard */; };
 /* End PBXBuildFile section */
@@ -33,9 +43,19 @@
 		A75345C82679119C0039D20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A75345CE26791D6D0039D20B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A75345D2267A47330039D20B /* TipografeiTema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipografeiTema.swift; sourceTree = "<group>"; };
+		BA11BA91268A6A2B004499CA /* FirstFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFormViewController.swift; sourceTree = "<group>"; };
+		BA11BA93268A6A3E004499CA /* SecondFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFormViewController.swift; sourceTree = "<group>"; };
+		BA11BA95268A6C13004499CA /* ResultFormView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultFormView.storyboard; sourceTree = "<group>"; };
+		BA11BA97268A6C29004499CA /* ResultFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFormViewController.swift; sourceTree = "<group>"; };
 		BA23EE3B2685170B00CD4CF3 /* TypeConcept.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeConcept.swift; sourceTree = "<group>"; };
+		BA568533268799E3002B4A63 /* FormDataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataSingleton.swift; sourceTree = "<group>"; };
+		BA56853526879DDE002B4A63 /* FontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
+		BA5685382687AE56002B4A63 /* FontsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsDatabase.swift; sourceTree = "<group>"; };
 		BABBD9B92683D0B100F07922 /* FontInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInfo.swift; sourceTree = "<group>"; };
 		BAD8586C268640DB009A29AA /* FormModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormModal.storyboard; sourceTree = "<group>"; };
+		BAD8586E268661A4009A29AA /* FormModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModalViewController.swift; sourceTree = "<group>"; };
+		BAD858702686691A009A29AA /* FirstFormView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstFormView.storyboard; sourceTree = "<group>"; };
+		BAD8587226866951009A29AA /* SecondFormView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondFormView.storyboard; sourceTree = "<group>"; };
 		BAF959D6268514D1004B0064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CaciqueAppZero/Base.lproj/DetailView.storyboard; sourceTree = "<group>"; };
 		BAF959D8268514ED004B0064 /* MainTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTableView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +90,7 @@
 		A75345B92679119A0039D20B /* CaciqueAppZero */ = {
 			isa = PBXGroup;
 			children = (
+				BA5685372687AE32002B4A63 /* Data */,
 				BABBD9B82683D06E00F07922 /* Models */,
 				BABBD9C52683D39A00F07922 /* LaunchScreen */,
 				BABBD9BB2683D0C600F07922 /* MainTableScreen */,
@@ -84,9 +105,18 @@
 			path = CaciqueAppZero;
 			sourceTree = "<group>";
 		};
+		BA5685372687AE32002B4A63 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BA5685382687AE56002B4A63 /* FontsDatabase.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		BABBD9B82683D06E00F07922 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BA56853526879DDE002B4A63 /* FontFamily.swift */,
 				BABBD9B92683D0B100F07922 /* FontInfo.swift */,
 			);
 			path = Models;
@@ -115,6 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				A75345BE2679119A0039D20B /* MainTableViewController.swift */,
+				BAD8586E268661A4009A29AA /* FormModalViewController.swift */,
+				BA11BA91268A6A2B004499CA /* FirstFormViewController.swift */,
+				BA11BA93268A6A3E004499CA /* SecondFormViewController.swift */,
+				BA11BA97268A6C29004499CA /* ResultFormViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -124,6 +158,9 @@
 			children = (
 				BAF959D8268514ED004B0064 /* MainTableView.storyboard */,
 				BAD8586C268640DB009A29AA /* FormModal.storyboard */,
+				BAD858702686691A009A29AA /* FirstFormView.storyboard */,
+				BAD8587226866951009A29AA /* SecondFormView.storyboard */,
+				BA11BA95268A6C13004499CA /* ResultFormView.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				BA23EE3B2685170B00CD4CF3 /* TypeConcept.swift */,
+				BA568533268799E3002B4A63 /* FormDataSingleton.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,7 +266,10 @@
 				A75345C72679119C0039D20B /* LaunchScreen.storyboard in Resources */,
 				A75345C42679119C0039D20B /* Assets.xcassets in Resources */,
 				BAD8586D268640DB009A29AA /* FormModal.storyboard in Resources */,
+				BAD8587326866951009A29AA /* SecondFormView.storyboard in Resources */,
 				BAF959D7268514D1004B0064 /* DetailView.storyboard in Resources */,
+				BAD858712686691A009A29AA /* FirstFormView.storyboard in Resources */,
+				BA11BA96268A6C13004499CA /* ResultFormView.storyboard in Resources */,
 				A75345C22679119A0039D20B /* Main.storyboard in Resources */,
 				BAF959D9268514ED004B0064 /* MainTableView.storyboard in Resources */,
 			);
@@ -241,13 +282,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD8586F268661A4009A29AA /* FormModalViewController.swift in Sources */,
 				A75345BF2679119A0039D20B /* MainTableViewController.swift in Sources */,
+				BA56853626879DDE002B4A63 /* FontFamily.swift in Sources */,
+				BA11BA94268A6A3E004499CA /* SecondFormViewController.swift in Sources */,
+				BA568534268799E3002B4A63 /* FormDataSingleton.swift in Sources */,
 				A75345BB2679119A0039D20B /* AppDelegate.swift in Sources */,
 				A75345BD2679119A0039D20B /* SceneDelegate.swift in Sources */,
 				BABBD9BA2683D0B100F07922 /* FontInfo.swift in Sources */,
 				BA23EE3C2685170B00CD4CF3 /* TypeConcept.swift in Sources */,
+				BA11BA98268A6C29004499CA /* ResultFormViewController.swift in Sources */,
 				A75345D3267A47330039D20B /* TipografeiTema.swift in Sources */,
 				A75345CF26791D6D0039D20B /* DetailViewController.swift in Sources */,
+				BA5685392687AE56002B4A63 /* FontsDatabase.swift in Sources */,
+				BA11BA92268A6A2B004499CA /* FirstFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
