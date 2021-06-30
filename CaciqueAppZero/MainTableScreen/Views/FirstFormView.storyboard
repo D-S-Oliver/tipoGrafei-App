@@ -17,23 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Pensa direitinho pra sua fonte ficar do jeitinho que deseja! :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-la-uNf">
-                                <rect key="frame" x="71" y="269" width="240" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Pensa direitinho pra sua fonte ficar do jeitinho que deseja! :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-la-uNf">
+                                <rect key="frame" x="32" y="268" width="350" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="g7B-5G-M3S"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Com serifa ou sem serifa?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0T-1V-qup">
-                                <rect key="frame" x="71" y="240" width="197" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Com serifa ou sem serifa?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0T-1V-qup">
+                                <rect key="frame" x="32" y="231" width="197" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="82k-It-BeQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-VX-qIA" userLabel="noSerifButto ">
-                                <rect key="frame" x="32" y="365" width="160" height="160"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-VX-qIA" userLabel="noSerifButto ">
+                                <rect key="frame" x="32" y="380" width="160" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-cE-Xwh">
                                         <rect key="frame" x="64" y="53" width="32.5" height="54"/>
@@ -56,8 +60,8 @@
                                     <constraint firstAttribute="width" constant="160" id="oU4-qf-eOw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvE-89-Byj" userLabel="serifButton">
-                                <rect key="frame" x="222" y="365" width="160" height="160"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvE-89-Byj" userLabel="serifButton">
+                                <rect key="frame" x="222" y="380" width="160" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-vl-IQa">
                                         <rect key="frame" x="64.5" y="52" width="31.5" height="56"/>
@@ -81,28 +85,40 @@
                                     <constraint firstAttribute="height" constant="160" id="sXZ-Mw-vAm"/>
                                 </constraints>
                             </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3Hq-D9-Kbn">
-                                <rect key="frame" x="146" y="717" width="122" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3Hq-D9-Kbn">
+                                <rect key="frame" x="0.0" y="740" width="414" height="28"/>
                                 <color key="pageIndicatorTintColor" systemColor="labelColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvM-Lb-c5n">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvM-Lb-c5n">
                                 <rect key="frame" x="0.0" y="800" width="414" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3Hq-D9-Kbn" firstAttribute="top" secondItem="mp7-VX-qIA" secondAttribute="bottom" constant="200" id="145-hn-2gV"/>
+                            <constraint firstItem="L0T-1V-qup" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="1eh-Om-2e9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J0T-la-uNf" secondAttribute="trailing" constant="32" id="1vQ-BO-mUj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yvM-Lb-c5n" secondAttribute="trailing" id="2UW-Ri-DO5"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RvE-89-Byj" secondAttribute="trailing" constant="32" id="9x0-5d-V6H"/>
+                            <constraint firstItem="3Hq-D9-Kbn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Bkr-Dg-8uG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yvM-Lb-c5n" secondAttribute="bottom" constant="32" id="IoJ-Sx-fFf"/>
                             <constraint firstItem="mp7-VX-qIA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="PoC-oJ-AsB"/>
+                            <constraint firstItem="J0T-la-uNf" firstAttribute="top" secondItem="L0T-1V-qup" secondAttribute="bottom" constant="16" id="QRU-Hx-byF"/>
+                            <constraint firstItem="3Hq-D9-Kbn" firstAttribute="top" secondItem="RvE-89-Byj" secondAttribute="bottom" constant="200" id="Rd5-lT-560"/>
+                            <constraint firstItem="mp7-VX-qIA" firstAttribute="top" secondItem="J0T-la-uNf" secondAttribute="bottom" constant="48" id="UHn-6t-o5s"/>
+                            <constraint firstItem="yvM-Lb-c5n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YB8-b7-ijv"/>
+                            <constraint firstItem="yvM-Lb-c5n" firstAttribute="top" secondItem="3Hq-D9-Kbn" secondAttribute="bottom" constant="32" id="YGt-vu-Rc6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3Hq-D9-Kbn" secondAttribute="trailing" id="dUz-KR-Dec"/>
+                            <constraint firstItem="J0T-la-uNf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="hby-jB-jMn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonNoSerifa" destination="mp7-VX-qIA" id="xIr-Z1-MSu"/>
                         <outlet property="buttonSerifa" destination="RvE-89-Byj" id="la3-Fn-Zm0"/>
+                        <outlet property="labelNoSerif" destination="JBb-cE-Xwh" id="hUk-40-BEh"/>
                         <outlet property="labelSerifa" destination="oXd-vl-IQa" id="MaF-9q-E0D"/>
                     </connections>
                 </viewController>

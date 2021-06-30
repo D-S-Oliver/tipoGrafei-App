@@ -17,17 +17,29 @@ class FirstFormViewController: UIViewController {
     
     @IBOutlet weak var labelSerifa: UILabel!
     
+    @IBOutlet weak var labelNoSerif: UILabel!
+    
     override func viewDidLoad() {
         buttonSerifa.layer.cornerRadius = 22;
         buttonSerifa.layer.masksToBounds = true;
+        
         buttonNoSerifa.layer.cornerRadius = 22;
         buttonNoSerifa.layer.masksToBounds = true;
+        
         let gesture = UITapGestureRecognizer(target: self, action: #selector(tapEventDetected(gesture:)))
         buttonSerifa.addGestureRecognizer(gesture)
         let gesture2 = UITapGestureRecognizer(target: self, action: #selector(tapEventDetected2(gesture:)))
+        
         buttonNoSerifa.addGestureRecognizer(gesture2)
        // buttonNoSerifa.addGestureRecognizer(gesture)
         buttonSerifa.backgroundColor = .white
+        
+        labelSerifa.font = UIFont(name: "Baskerville", size: 48)
+        
+        buttonSerifa.backgroundColor = .white
+        labelSerifa.textColor = .black
+        buttonNoSerifa.backgroundColor = .tipoGrafeiRed
+        labelNoSerif.textColor = .white
     }
     
         @objc func tapEventDetected(gesture:UITapGestureRecognizer){
@@ -38,6 +50,7 @@ class FirstFormViewController: UIViewController {
                     buttonSerifa.backgroundColor = .tipoGrafeiRed
                     labelSerifa.textColor = .white
                     buttonNoSerifa.backgroundColor = .white
+                    labelNoSerif.textColor = .black
                 }
         }
         @objc func tapEventDetected2(gesture:UITapGestureRecognizer){
@@ -48,6 +61,8 @@ class FirstFormViewController: UIViewController {
                 buttonSerifa.backgroundColor = .white
                 labelSerifa.textColor = .black
                 buttonNoSerifa.backgroundColor = .tipoGrafeiRed
+                labelNoSerif.textColor = .white
+                
                 
      }
     }
