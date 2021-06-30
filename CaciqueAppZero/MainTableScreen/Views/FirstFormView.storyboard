@@ -100,6 +100,11 @@
                             <constraint firstItem="mp7-VX-qIA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="PoC-oJ-AsB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonNoSerifa" destination="mp7-VX-qIA" id="xIr-Z1-MSu"/>
+                        <outlet property="buttonSerifa" destination="RvE-89-Byj" id="la3-Fn-Zm0"/>
+                        <outlet property="labelSerifa" destination="oXd-vl-IQa" id="MaF-9q-E0D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
