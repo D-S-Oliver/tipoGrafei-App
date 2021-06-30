@@ -18,8 +18,10 @@ class FirstFormViewController: UIViewController {
     @IBOutlet weak var labelSerifa: UILabel!
     
     @IBOutlet weak var labelNoSerif: UILabel!
+    var formData = FormDataSingleton.shared
     
     override func viewDidLoad() {
+        
         buttonSerifa.layer.cornerRadius = 22;
         buttonSerifa.layer.masksToBounds = true;
         
@@ -40,6 +42,7 @@ class FirstFormViewController: UIViewController {
         labelSerifa.textColor = .black
         buttonNoSerifa.backgroundColor = .tipoGrafeiRed
         labelNoSerif.textColor = .white
+        formData.hasSerif = false
     }
     
         @objc func tapEventDetected(gesture:UITapGestureRecognizer){
@@ -51,6 +54,7 @@ class FirstFormViewController: UIViewController {
                     labelSerifa.textColor = .white
                     buttonNoSerifa.backgroundColor = .white
                     labelNoSerif.textColor = .black
+                    formData.hasSerif = true
                 }
         }
         @objc func tapEventDetected2(gesture:UITapGestureRecognizer){
@@ -62,6 +66,8 @@ class FirstFormViewController: UIViewController {
                 labelSerifa.textColor = .black
                 buttonNoSerifa.backgroundColor = .tipoGrafeiRed
                 labelNoSerif.textColor = .white
+                formData.hasSerif = false
+
                 
                 
      }
