@@ -14,8 +14,7 @@ class FormModalViewController: UIPageViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextStepButton: UIButton!
     
-    var database: [FontInfo] = FontsDatabase().database
-    var formData: FormDataSingleton = .shared
+    
     var viewControllerIndex: Int = 0
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
@@ -38,20 +37,6 @@ class FormModalViewController: UIPageViewController {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
     }
-    
-    
-    func filterDatabase(hasSerif: Bool, family: FontFamily) -> [FontInfo] {
-        
-        var filteredDatabase: [FontInfo] = []
-        for font in database {
-            
-            if font.hasSerif == hasSerif && font.family == family {
-                filteredDatabase.append(font)
-            }
-        }
-        return filteredDatabase
-    }
-    
     
 }
 
