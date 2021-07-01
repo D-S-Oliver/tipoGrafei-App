@@ -18,50 +18,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="OAW-v8-Chj">
-                                <rect key="frame" x="0.0" y="738" width="414" height="28"/>
+                                <rect key="frame" x="0.0" y="471" width="414" height="295"/>
                                 <color key="pageIndicatorTintColor" systemColor="labelColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23d-D2-srQ">
+                                <rect key="frame" x="26" y="277" width="362" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="ixj-e1-Oiq"/>
+                                </constraints>
+                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolhe uma e conta pra gente!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W8-xp-CZB">
-                                <rect key="frame" x="32" y="253" width="240" height="21"/>
+                                <rect key="frame" x="32" y="190" width="350" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estética pretendida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWm-k2-BpB">
-                                <rect key="frame" x="32" y="195" width="148" height="21"/>
+                                <rect key="frame" x="32" y="131" width="260" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a ideia que sua fonte quer passar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGI-0J-1b6">
-                                <rect key="frame" x="32" y="232" width="300" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a ideia a fonte quer passar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGI-0J-1b6">
+                                <rect key="frame" x="32" y="168" width="249" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23d-D2-srQ">
-                                <rect key="frame" x="32" y="378" width="362" height="162"/>
-                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7W8-xp-CZB" firstAttribute="top" secondItem="bGI-0J-1b6" secondAttribute="bottom" id="2Bw-fF-vLE"/>
-                            <constraint firstItem="bGI-0J-1b6" firstAttribute="top" secondItem="wWm-k2-BpB" secondAttribute="bottom" constant="16" id="FNT-fr-LRD"/>
-                            <constraint firstItem="wWm-k2-BpB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="NMV-sN-RkA"/>
-                            <constraint firstItem="23d-D2-srQ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-32" id="Oi2-4f-A60"/>
-                            <constraint firstItem="7W8-xp-CZB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="UJ6-XS-en0"/>
-                            <constraint firstItem="23d-D2-srQ" firstAttribute="top" secondItem="7W8-xp-CZB" secondAttribute="bottom" constant="48" id="Uw3-Q4-QQM"/>
-                            <constraint firstItem="OAW-v8-Chj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VXQ-x0-gG0"/>
-                            <constraint firstItem="OAW-v8-Chj" firstAttribute="top" secondItem="23d-D2-srQ" secondAttribute="bottom" constant="200" id="WD6-Sd-7Vm"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OAW-v8-Chj" secondAttribute="trailing" id="cBj-gq-fk1"/>
-                            <constraint firstItem="bGI-0J-1b6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="fJd-Ac-5Ik"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OAW-v8-Chj" secondAttribute="bottom" constant="96" id="mJ9-xw-lqY"/>
-                            <constraint firstItem="23d-D2-srQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="vmR-af-b3Y"/>
+                            <constraint firstItem="wWm-k2-BpB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="791-Ez-55p"/>
+                            <constraint firstItem="wWm-k2-BpB" firstAttribute="leading" secondItem="bGI-0J-1b6" secondAttribute="leading" id="Buo-XL-Nkt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OAW-v8-Chj" secondAttribute="bottom" constant="96" id="Cnb-pq-A6W"/>
+                            <constraint firstItem="OAW-v8-Chj" firstAttribute="top" secondItem="23d-D2-srQ" secondAttribute="bottom" constant="32" id="EJt-4N-qc4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wWm-k2-BpB" secondAttribute="trailing" constant="122" id="Fj5-B3-zQ8"/>
+                            <constraint firstItem="7W8-xp-CZB" firstAttribute="centerX" secondItem="23d-D2-srQ" secondAttribute="centerX" id="KgU-qF-jj5"/>
+                            <constraint firstItem="wWm-k2-BpB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="87" id="aFJ-sO-Vnb"/>
+                            <constraint firstItem="wWm-k2-BpB" firstAttribute="leading" secondItem="7W8-xp-CZB" secondAttribute="leading" id="b5C-YW-KSS"/>
+                            <constraint firstItem="bGI-0J-1b6" firstAttribute="top" secondItem="wWm-k2-BpB" secondAttribute="bottom" constant="16" id="bMI-0h-VWZ"/>
+                            <constraint firstItem="OAW-v8-Chj" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="bXP-AU-d81"/>
+                            <constraint firstItem="23d-D2-srQ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-90" id="eYy-s3-gK2"/>
+                            <constraint firstItem="7W8-xp-CZB" firstAttribute="top" secondItem="bGI-0J-1b6" secondAttribute="bottom" constant="1" id="ess-hg-4od"/>
+                            <constraint firstItem="23d-D2-srQ" firstAttribute="centerX" secondItem="OAW-v8-Chj" secondAttribute="centerX" id="fD8-it-IvW"/>
+                            <constraint firstAttribute="trailing" secondItem="OAW-v8-Chj" secondAttribute="trailing" id="m6C-aG-Hg0"/>
+                            <constraint firstItem="23d-D2-srQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="wUg-N5-Nhn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionOne" destination="bGI-0J-1b6" id="NRu-9D-lID"/>
+                        <outlet property="descriptionTwo" destination="7W8-xp-CZB" id="6u0-pw-3GV"/>
+                        <outlet property="esteticaPretendida" destination="wWm-k2-BpB" id="TuZ-1A-BB4"/>
                         <outlet property="pageControl" destination="OAW-v8-Chj" id="iY6-Cd-7Ix"/>
                         <outlet property="picker" destination="23d-D2-srQ" id="Hlz-o3-XF2"/>
                     </connections>

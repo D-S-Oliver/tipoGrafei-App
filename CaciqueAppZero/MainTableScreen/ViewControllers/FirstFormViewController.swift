@@ -10,6 +10,7 @@ import UIKit
 
 class FirstFormViewController: UIViewController {
     
+    @IBOutlet weak var titleSerifa: UILabel!
     
     @IBOutlet weak var buttonSerifa: UIView!
     
@@ -29,6 +30,9 @@ class FirstFormViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        titleSerifa.font = UIFont.boldSystemFont(ofSize: 25.0)
+        labelNoSerif.font = labelSerifa.font.withSize(90)
+        
         buttonSerifa.layer.cornerRadius = 22;
         buttonSerifa.layer.masksToBounds = true;
         
@@ -43,12 +47,16 @@ class FirstFormViewController: UIViewController {
        // buttonNoSerifa.addGestureRecognizer(gesture)
         buttonSerifa.backgroundColor = .white
         
-        labelSerifa.font = UIFont(name: "Baskerville", size: 48)
+        labelSerifa.font = UIFont(name: "Baskerville", size: 90)
         
         buttonSerifa.backgroundColor = .white
-        labelSerifa.textColor = .black
+        buttonSerifa.layer.borderWidth = 2
+        buttonSerifa.layer.borderColor = UIColor.init(displayP3Red: 252/255, green: 111/255, blue: 111/255, alpha: 1).cgColor
+        labelSerifa.textColor = UIColor(displayP3Red: 252/255, green: 111/255, blue: 111/255, alpha: 1)
+        
         buttonNoSerifa.backgroundColor = .tipoGrafeiRed
         labelNoSerif.textColor = .white
+        
         formData.hasSerif = false
         
         pageControl.isUserInteractionEnabled = false
@@ -71,7 +79,11 @@ class FirstFormViewController: UIViewController {
                     buttonSerifa.backgroundColor = .tipoGrafeiRed
                     labelSerifa.textColor = .white
                     buttonNoSerifa.backgroundColor = .white
-                    labelNoSerif.textColor = .black
+                    buttonNoSerifa.layer.borderWidth = 2
+                    buttonNoSerifa.layer.borderColor = UIColor.init(displayP3Red: 252/255, green: 111/255, blue: 111/255, alpha: 1).cgColor
+                    buttonSerifa.layer.borderWidth = 2
+                    buttonSerifa.layer.borderColor = UIColor.white.cgColor
+                    labelNoSerif.textColor = UIColor(displayP3Red: 252/255, green: 111/255, blue: 111/255, alpha: 1)
                     formData.hasSerif = true
                 }
         }
@@ -81,8 +93,12 @@ class FirstFormViewController: UIViewController {
             if gesture.state == .ended{
 
                 buttonSerifa.backgroundColor = .white
-                labelSerifa.textColor = .black
+                buttonSerifa.layer.borderWidth = 2
+                buttonSerifa.layer.borderColor = UIColor.init(displayP3Red: 252/255, green: 111/255, blue: 111/255, alpha: 1).cgColor
+                labelSerifa.textColor = UIColor(displayP3Red: 252/255, green: 111/255, blue: 111/255, alpha: 1)
                 buttonNoSerifa.backgroundColor = .tipoGrafeiRed
+                buttonSerifa.layer.borderWidth = 2
+                buttonNoSerifa.layer.borderColor = UIColor.white.cgColor
                 labelNoSerif.textColor = .white
                 formData.hasSerif = false
 

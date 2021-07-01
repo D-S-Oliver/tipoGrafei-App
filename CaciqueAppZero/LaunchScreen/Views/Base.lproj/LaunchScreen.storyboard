@@ -19,12 +19,18 @@
                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hf7-kw-tvh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="rw-logo" translatesAutoresizingMaskIntoConstraints="NO" id="196-c1-zhO">
-                                        <rect key="frame" x="10" y="93" width="395" height="541"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="rw-logo" translatesAutoresizingMaskIntoConstraints="NO" id="196-c1-zhO">
+                                        <rect key="frame" x="67" y="250" width="281" height="319"/>
                                     </imageView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="e5x-wi-IcA"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="196-c1-zhO" firstAttribute="leading" secondItem="e5x-wi-IcA" secondAttribute="leading" constant="64" id="VW2-sB-YQR"/>
+                                    <constraint firstItem="196-c1-zhO" firstAttribute="centerX" secondItem="hf7-kw-tvh" secondAttribute="centerX" id="eP0-rC-c05"/>
+                                    <constraint firstItem="196-c1-zhO" firstAttribute="top" secondItem="e5x-wi-IcA" secondAttribute="top" constant="250" id="iSP-7G-yIu"/>
+                                    <constraint firstItem="196-c1-zhO" firstAttribute="centerY" secondItem="hf7-kw-tvh" secondAttribute="centerY" id="yYr-99-dlV"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,7 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="rw-logo" width="1024" height="1024"/>
+        <image name="rw-logo" width="309" height="365"/>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

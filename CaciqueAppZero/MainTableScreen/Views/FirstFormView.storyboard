@@ -17,27 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Pensa direitinho pra sua fonte ficar do jeitinho que deseja! :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-la-uNf">
-                                <rect key="frame" x="32" y="266" width="350" height="64"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Pensa direitinho na escolha pra sua fonte ficar do jeitinho que deseja! :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-la-uNf">
+                                <rect key="frame" x="18" y="266" width="378" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="g7B-5G-M3S"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Com serifa ou sem serifa?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0T-1V-qup">
-                                <rect key="frame" x="32" y="229" width="197" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0T-1V-qup">
+                                <rect key="frame" x="24" y="229" width="207.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="82k-It-BeQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Com serifa ou sem serifa?">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvE-89-Byj" userLabel="serifButton">
+                                <rect key="frame" x="229" y="378" width="160" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-vl-IQa">
+                                        <rect key="frame" x="50.5" y="27.5" width="59" height="105"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="A">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="90" name="NewYorkLarge-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstItem="oXd-vl-IQa" firstAttribute="centerY" secondItem="RvE-89-Byj" secondAttribute="centerY" id="Ixc-62-zR5"/>
+                                    <constraint firstItem="oXd-vl-IQa" firstAttribute="centerX" secondItem="RvE-89-Byj" secondAttribute="centerX" id="MFZ-OH-WjN"/>
+                                    <constraint firstAttribute="width" constant="160" id="chF-lb-7QY"/>
+                                    <constraint firstAttribute="height" constant="160" id="sXZ-Mw-vAm"/>
+                                </constraints>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3Hq-D9-Kbn">
+                                <rect key="frame" x="0.0" y="738" width="414" height="28"/>
+                                <color key="pageIndicatorTintColor" systemColor="labelColor"/>
+                                <color key="currentPageIndicatorTintColor" name="AccentColor"/>
+                            </pageControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-VX-qIA" userLabel="noSerifButto ">
-                                <rect key="frame" x="32" y="378" width="160" height="160"/>
+                                <rect key="frame" x="24" y="378" width="160" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-cE-Xwh">
                                         <rect key="frame" x="64" y="53" width="32.5" height="54"/>
@@ -60,52 +95,22 @@
                                     <constraint firstAttribute="width" constant="160" id="oU4-qf-eOw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvE-89-Byj" userLabel="serifButton">
-                                <rect key="frame" x="222" y="378" width="160" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-vl-IQa">
-                                        <rect key="frame" x="64.5" y="52" width="31.5" height="56"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="A">
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="48" name="NewYorkLarge-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <constraints>
-                                    <constraint firstItem="oXd-vl-IQa" firstAttribute="centerY" secondItem="RvE-89-Byj" secondAttribute="centerY" id="Ixc-62-zR5"/>
-                                    <constraint firstItem="oXd-vl-IQa" firstAttribute="centerX" secondItem="RvE-89-Byj" secondAttribute="centerX" id="MFZ-OH-WjN"/>
-                                    <constraint firstAttribute="width" constant="160" id="chF-lb-7QY"/>
-                                    <constraint firstAttribute="height" constant="160" id="sXZ-Mw-vAm"/>
-                                </constraints>
-                            </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3Hq-D9-Kbn">
-                                <rect key="frame" x="0.0" y="738" width="414" height="28"/>
-                                <color key="pageIndicatorTintColor" systemColor="labelColor"/>
-                                <color key="currentPageIndicatorTintColor" name="AccentColor"/>
-                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3Hq-D9-Kbn" firstAttribute="top" secondItem="mp7-VX-qIA" secondAttribute="bottom" constant="200" id="145-hn-2gV"/>
-                            <constraint firstItem="L0T-1V-qup" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="1eh-Om-2e9"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J0T-la-uNf" secondAttribute="trailing" constant="32" id="1vQ-BO-mUj"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RvE-89-Byj" secondAttribute="trailing" constant="32" id="9x0-5d-V6H"/>
+                            <constraint firstItem="L0T-1V-qup" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="1eh-Om-2e9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J0T-la-uNf" secondAttribute="trailing" constant="18" id="1vQ-BO-mUj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RvE-89-Byj" secondAttribute="trailing" constant="24" id="9x0-5d-V6H"/>
                             <constraint firstItem="3Hq-D9-Kbn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Bkr-Dg-8uG"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3Hq-D9-Kbn" secondAttribute="bottom" constant="96" id="IOD-23-BZO"/>
-                            <constraint firstItem="mp7-VX-qIA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="PoC-oJ-AsB"/>
+                            <constraint firstItem="mp7-VX-qIA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="PoC-oJ-AsB"/>
                             <constraint firstItem="J0T-la-uNf" firstAttribute="top" secondItem="L0T-1V-qup" secondAttribute="bottom" constant="16" id="QRU-Hx-byF"/>
                             <constraint firstItem="3Hq-D9-Kbn" firstAttribute="top" secondItem="RvE-89-Byj" secondAttribute="bottom" constant="200" id="Rd5-lT-560"/>
                             <constraint firstItem="mp7-VX-qIA" firstAttribute="top" secondItem="J0T-la-uNf" secondAttribute="bottom" constant="48" id="UHn-6t-o5s"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3Hq-D9-Kbn" secondAttribute="trailing" id="dUz-KR-Dec"/>
-                            <constraint firstItem="J0T-la-uNf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="hby-jB-jMn"/>
+                            <constraint firstItem="J0T-la-uNf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="hby-jB-jMn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -114,6 +119,7 @@
                         <outlet property="labelNoSerif" destination="JBb-cE-Xwh" id="hUk-40-BEh"/>
                         <outlet property="labelSerifa" destination="oXd-vl-IQa" id="MaF-9q-E0D"/>
                         <outlet property="pageControl" destination="3Hq-D9-Kbn" id="3AB-WV-lNw"/>
+                        <outlet property="titleSerifa" destination="L0T-1V-qup" id="5gE-ns-q06"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

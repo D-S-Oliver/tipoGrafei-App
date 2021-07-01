@@ -16,6 +16,16 @@ class SecondFormViewController: UIViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    
+    @IBOutlet weak var esteticaPretendida: UILabel!
+    
+    @IBOutlet weak var descriptionOne: UILabel!
+    
+    @IBOutlet weak var descriptionTwo: UILabel!
+    
+   
+    
+    
     var families: [String] = ["Cursiva", "Romana", "Gótica", "Egípcia", "Grotesca", "Fantasia"]
     
     override func viewDidLoad() {
@@ -25,6 +35,10 @@ class SecondFormViewController: UIViewController {
         
         pageControl.isUserInteractionEnabled = false
         pageControl.currentPage = 1
+        
+        esteticaPretendida.font = UIFont.boldSystemFont(ofSize: 25.0)
+        descriptionOne.font = descriptionOne.font.withSize(20)
+        descriptionTwo.font = descriptionTwo.font.withSize(20)
         
         
 
