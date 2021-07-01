@@ -85,3 +85,7 @@ extension FormModalViewController: UIPageViewControllerDataSource {
     
     
 }
+
+extension FormModalViewController: UIPageViewControllerDelegate {
+    
+}

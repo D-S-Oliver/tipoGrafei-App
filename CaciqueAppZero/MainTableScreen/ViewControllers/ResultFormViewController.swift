@@ -35,7 +35,6 @@ class ResultFormViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         filteredDatabase = filterDatabase(hasSerif: formData.hasSerif, family: formData.fontFamily)
         resultsCollectionView.reloadData()
-        print(filteredDatabase)
     }
     
     func filterDatabase(hasSerif: Bool, family: FontFamily) -> [FontInfo] {
@@ -54,14 +53,12 @@ class ResultFormViewController: UIViewController {
 
 extension ResultFormViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(filteredDatabase.count)
         return filteredDatabase.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let resultCell = collectionView.dequeueReusableCell(withReuseIdentifier: rowIdentifier, for: indexPath) as! CollectionViewResultCell
         let font: FontInfo = filteredDatabase[indexPath.row]
-        print(font)
         
         resultCell.letterLabel.font = UIFont(name: font.name, size: 50)
         resultCell.letterLabel.textColor = .white

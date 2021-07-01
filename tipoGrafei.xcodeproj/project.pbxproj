@@ -20,6 +20,7 @@
 		BA11BA96268A6C13004499CA /* ResultFormView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA11BA95268A6C13004499CA /* ResultFormView.storyboard */; };
 		BA11BA98268A6C29004499CA /* ResultFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11BA97268A6C29004499CA /* ResultFormViewController.swift */; };
 		BA1660FF268CFC4D00BB1292 /* CollectionViewResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1660FE268CFC4D00BB1292 /* CollectionViewResultCell.swift */; };
+		BA1EC8F1268E3EAE001ABFA4 /* CustomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EC8F0268E3EAE001ABFA4 /* CustomProtocol.swift */; };
 		BA23EE3C2685170B00CD4CF3 /* TypeConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA23EE3B2685170B00CD4CF3 /* TypeConcept.swift */; };
 		BA568534268799E3002B4A63 /* FormDataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA568533268799E3002B4A63 /* FormDataSingleton.swift */; };
 		BA56853626879DDE002B4A63 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56853526879DDE002B4A63 /* FontFamily.swift */; };
@@ -49,6 +50,7 @@
 		BA11BA95268A6C13004499CA /* ResultFormView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultFormView.storyboard; sourceTree = "<group>"; };
 		BA11BA97268A6C29004499CA /* ResultFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFormViewController.swift; sourceTree = "<group>"; };
 		BA1660FE268CFC4D00BB1292 /* CollectionViewResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewResultCell.swift; sourceTree = "<group>"; };
+		BA1EC8F0268E3EAE001ABFA4 /* CustomProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProtocol.swift; sourceTree = "<group>"; };
 		BA23EE3B2685170B00CD4CF3 /* TypeConcept.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeConcept.swift; sourceTree = "<group>"; };
 		BA568533268799E3002B4A63 /* FormDataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataSingleton.swift; sourceTree = "<group>"; };
 		BA56853526879DDE002B4A63 /* FontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				BA56853526879DDE002B4A63 /* FontFamily.swift */,
 				BABBD9B92683D0B100F07922 /* FontInfo.swift */,
+				BA1EC8F0268E3EAE001ABFA4 /* CustomProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				BA11BA98268A6C29004499CA /* ResultFormViewController.swift in Sources */,
 				A75345D3267A47330039D20B /* TipografeiTema.swift in Sources */,
 				A75345CF26791D6D0039D20B /* DetailViewController.swift in Sources */,
+				BA1EC8F1268E3EAE001ABFA4 /* CustomProtocol.swift in Sources */,
 				BA5685392687AE56002B4A63 /* FontsDatabase.swift in Sources */,
 				BA1660FF268CFC4D00BB1292 /* CollectionViewResultCell.swift in Sources */,
 				BA11BA92268A6A2B004499CA /* FirstFormViewController.swift in Sources */,

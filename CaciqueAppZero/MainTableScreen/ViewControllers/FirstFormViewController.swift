@@ -17,7 +17,14 @@ class FirstFormViewController: UIViewController {
     
     @IBOutlet weak var labelSerifa: UILabel!
     
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    @IBOutlet weak var nextPageButton: UIButton!
+    
+    weak var parentController: UIPageViewController? = nil
+    
     @IBOutlet weak var labelNoSerif: UILabel!
+    
     var formData = FormDataSingleton.shared
     
     override func viewDidLoad() {
@@ -43,6 +50,17 @@ class FirstFormViewController: UIViewController {
         buttonNoSerifa.backgroundColor = .tipoGrafeiRed
         labelNoSerif.textColor = .white
         formData.hasSerif = false
+        
+        pageControl.isUserInteractionEnabled = false
+        pageControl.currentPage = 0
+        
+        
+        
+        
+        
+        
+        
+
     }
     
         @objc func tapEventDetected(gesture:UITapGestureRecognizer){

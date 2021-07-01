@@ -9,9 +9,9 @@
 import UIKit
 
 class TableViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var footerBottomConstraint: NSLayoutConstraint!
+
     
     @IBOutlet weak var matchFontButton: UIButton!
     
@@ -28,7 +28,6 @@ class TableViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         concepts.append(TypeConcept(title: "Tipografia", text: "A tipografia tem um vasto léxico que descreve toda a sua diversidade. Ela é basicamente o estuda, a criação e a aplicação dos caracteres, estilos, formatos e arranjos visuais das palavras. Os tipos, conhecidos como fontes ou tipos de letra, indicam a composição visual de um texto."))
         concepts.append(TypeConcept(title: "Cor Tipográfica", text: "A Cor Tipográfica refere-se à quantidade de área preenchida pela cor de um texto em relação a um mesmo espaço, tendo como parâmetros a densidade dos  distintos caracteres e pesos.\n\nAssim, quanto maior o peso, mais denso será o texto e, portanto, mais cor haverá. Utilizar fontes com Negrito ou Black (e variantes) resultará  numa presença mais pronunciada na página.\n\nA combinação de letra, espaçamento entre as palavras (ou espacejamento) e as linhas resulta na Cor tipográfica."))
         concepts.append(TypeConcept(title: "Alinhamento", text: "Para dar diferentes tratamentos e apresentações horizontais, o texto pode ser posicionado de diferentes modos. Este texto está alinhado ao topo e à esquerda do bloco de texto.\n\nEste texto está centralizado verticalmente ao corpo da página. \n\nEste texto está alinhado ao mesmo tempo à direita e abaixo do bloco de texto. \n\nPodemos justificar horizontal e verticalmente esse texto para forçá-lo a se distribuir por maior parte do espaço disponível."))
@@ -73,39 +72,35 @@ extension TableViewController: UISearchResultsUpdating {
 }
 
 extension TableViewController: UITableViewDelegate{
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         selectedIndex = indexPath.item
-        print("selectedIndex1 = ", selectedIndex)
-        print("indexPath1 = ", indexPath.item)
         
         performSegue(withIdentifier: "presentDetailSegue", sender: self)
     }
-//        if isFiltering {
-//            return filteredConcepts.count
-//        }
-//        return concepts.count
+    //        if isFiltering {
+    //            return filteredConcepts.count
+    //        }
+    //        return concepts.count
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? DetailViewController
         else {return}
         
-        print("selectedIndex2 = ", selectedIndex)
         detailVC.conceito = concepts[selectedIndex]
-        print("selectedIndex3 = ", selectedIndex)
     }
 }
 
-    
-    extension TableViewController: UITableViewDataSource {
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            
-            if isFiltering {
-                return filteredConcepts.count}
-            
-            
-            return concepts.count
-        }
+
+extension TableViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if isFiltering {
+            return filteredConcepts.count}
+        
+        
+        return concepts.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCells", for: indexPath)
@@ -113,16 +108,16 @@ extension TableViewController: UITableViewDelegate{
         cell.textLabel?.text = filteredConcepts[indexPath.item].title
         cell.accessoryType = .disclosureIndicator
         return cell}
-    }
+}
 
 
 
 
 
-    
-    
 
-    
+
+
+
 //    func handleKeyboard(notification: Notification) {
 //
 //      guard notification.name == UIResponder.keyboardWillChangeFrameNotification else {
@@ -145,24 +140,24 @@ extension TableViewController: UITableViewDelegate{
 //      })
 //    }
 
-    
-
-        
-        //  var isSearchBarEmpty: Bool {
-        //        return searchController.searchBar.text?.isEmpty ?? true
-        //      }
-        //
-        //      var isFiltering: Bool {
-        //        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
-        //        return searchController.isActive && (!isSearchBarEmpty || searchBarScopeIsFiltering)
-        //      }
 
 
 
-    
+//  var isSearchBarEmpty: Bool {
+//        return searchController.searchBar.text?.isEmpty ?? true
+//      }
+//
+//      var isFiltering: Bool {
+//        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+//        return searchController.isActive && (!isSearchBarEmpty || searchBarScopeIsFiltering)
+//      }
+
+
+
+
 
 //    func filterContentSearch
 
 
-    
+
 

@@ -17,29 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIF-Wv-g4C">
-                                <rect key="frame" x="0.0" y="800" width="414" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="OAW-v8-Chj">
-                                <rect key="frame" x="0.0" y="740" width="414" height="28"/>
+                                <rect key="frame" x="0.0" y="738" width="414" height="28"/>
                                 <color key="pageIndicatorTintColor" systemColor="labelColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Escolhe uma e conta pra gente!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W8-xp-CZB">
-                                <rect key="frame" x="32" y="309" width="240" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolhe uma e conta pra gente!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W8-xp-CZB">
+                                <rect key="frame" x="32" y="253" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Estética pretendida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWm-k2-BpB">
-                                <rect key="frame" x="32" y="251" width="148" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estética pretendida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWm-k2-BpB">
+                                <rect key="frame" x="32" y="195" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Qual a ideia que sua fonte quer passar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGI-0J-1b6">
-                                <rect key="frame" x="32" y="288" width="300" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a ideia que sua fonte quer passar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGI-0J-1b6">
+                                <rect key="frame" x="32" y="232" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,16 +55,14 @@
                             <constraint firstItem="23d-D2-srQ" firstAttribute="top" secondItem="7W8-xp-CZB" secondAttribute="bottom" constant="48" id="Uw3-Q4-QQM"/>
                             <constraint firstItem="OAW-v8-Chj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VXQ-x0-gG0"/>
                             <constraint firstItem="OAW-v8-Chj" firstAttribute="top" secondItem="23d-D2-srQ" secondAttribute="bottom" constant="200" id="WD6-Sd-7Vm"/>
-                            <constraint firstItem="FIF-Wv-g4C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YbA-fR-3hH"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FIF-Wv-g4C" secondAttribute="trailing" id="aSO-Dn-n2s"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OAW-v8-Chj" secondAttribute="trailing" id="cBj-gq-fk1"/>
                             <constraint firstItem="bGI-0J-1b6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="fJd-Ac-5Ik"/>
-                            <constraint firstItem="FIF-Wv-g4C" firstAttribute="top" secondItem="OAW-v8-Chj" secondAttribute="bottom" constant="32" id="u5u-RY-KYh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OAW-v8-Chj" secondAttribute="bottom" constant="96" id="mJ9-xw-lqY"/>
                             <constraint firstItem="23d-D2-srQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="vmR-af-b3Y"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="FIF-Wv-g4C" secondAttribute="bottom" constant="32" id="wqS-W3-nm1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pageControl" destination="OAW-v8-Chj" id="iY6-Cd-7Ix"/>
                         <outlet property="picker" destination="23d-D2-srQ" id="Hlz-o3-XF2"/>
                     </connections>
                 </viewController>

@@ -12,11 +12,22 @@ class SecondFormViewController: UIViewController {
     
     @IBOutlet weak var picker: UIPickerView!
     
+    @IBOutlet weak var nextPageButton: UIButton!
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     var families: [String] = ["Cursiva", "Romana", "Gótica", "Egípcia", "Grotesca", "Fantasia"]
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         picker.dataSource = self
         picker.delegate = self
+        
+        pageControl.isUserInteractionEnabled = false
+        pageControl.currentPage = 1
+        
+        
+
     }
 }
 
