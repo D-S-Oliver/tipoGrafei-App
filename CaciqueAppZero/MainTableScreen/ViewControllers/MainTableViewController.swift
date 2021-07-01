@@ -13,6 +13,8 @@ class TableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var footerBottomConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var matchFontButton: UIButton!
+    
     var concepts: [TypeConcept] = []
     var filteredConcepts : [TypeConcept] = []
     var selectedIndex: Int = 0
@@ -48,6 +50,8 @@ class TableViewController: UIViewController {
         searchController.searchBar.placeholder = "Quer buscar TIPO o quê?"
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        matchFontButton.backgroundColor = .tipoGrafeiRed
+        matchFontButton.layer.cornerRadius = 20
     }
 }
 

@@ -14,7 +14,7 @@ class FontsDatabase {
     
     public init() {
         database = []
-        database.append(FontInfo(name: "New York Large", family: .romana, hasSerif: true))
+        database.append(FontInfo(name: "Baskerville", family: .romana, hasSerif: true))
         database.append(FontInfo(name: "Arial", family: .grotesca, hasSerif: false))
     }
 }

@@ -16,19 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-le-bvD">
-                                <rect key="frame" x="38" y="770" width="338" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="NZM-AM-LLy"/>
-                                    <constraint firstAttribute="height" constant="64" id="PB1-Yd-iUA"/>
-                                </constraints>
-                                <state key="normal" title="Match" image="ButtonFind"/>
-                                <connections>
-                                    <segue destination="7aX-2V-hp5" kind="presentation" id="GqI-YK-Me6"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K9L-JR-hED">
-                                <rect key="frame" x="16" y="76" width="382" height="622"/>
+                                <rect key="frame" x="16" y="76" width="382" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCells" id="FgV-88-nvw">
@@ -41,17 +30,28 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-le-bvD">
+                                <rect key="frame" x="82" y="766" width="250" height="64"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="NZM-AM-LLy"/>
+                                    <constraint firstAttribute="height" constant="64" id="PB1-Yd-iUA"/>
+                                </constraints>
+                                <state key="normal" title="Encontre Uma Fonte"/>
+                                <connections>
+                                    <segue destination="7aX-2V-hp5" kind="presentation" id="GqI-YK-Me6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0Pq-le-bvD" firstAttribute="top" secondItem="K9L-JR-hED" secondAttribute="bottom" constant="72" id="3lK-oZ-fZs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Pq-le-bvD" secondAttribute="bottom" constant="28" id="682-wh-Dnr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Pq-le-bvD" secondAttribute="trailing" constant="38" id="OJ7-Di-JhA"/>
-                            <constraint firstItem="0Pq-le-bvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="PRy-g3-aRl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9L-JR-hED" secondAttribute="trailing" constant="16" id="ou5-MU-ojY"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="qZd-He-4CV"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="w9A-FY-T6D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Pq-le-bvD" secondAttribute="bottom" constant="32" id="0GH-cb-y0z"/>
+                            <constraint firstItem="0Pq-le-bvD" firstAttribute="top" secondItem="K9L-JR-hED" secondAttribute="bottom" constant="32" id="0Kr-iM-nwE"/>
+                            <constraint firstItem="K9L-JR-hED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Udd-bZ-WG6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9L-JR-hED" secondAttribute="trailing" constant="16" id="bH8-tk-jE0"/>
+                            <constraint firstItem="0Pq-le-bvD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewI-bE-PdG"/>
+                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="wfB-QU-bpZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Yh0-d8-dDo">
@@ -75,6 +75,7 @@
                         </view>
                     </navigationItem>
                     <connections>
+                        <outlet property="matchFontButton" destination="0Pq-le-bvD" id="3iS-sv-9Iq"/>
                         <outlet property="tableView" destination="K9L-JR-hED" id="sAj-Ic-Amv"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="VcL-a8-4H4"/>
                         <segue destination="Qhm-IR-zuN" kind="show" identifier="presentDetailSegue" id="hh6-De-pgq"/>
@@ -104,8 +105,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ButtonFind" width="1372" height="224"/>
         <image name="Inline-logo" width="201" height="31"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

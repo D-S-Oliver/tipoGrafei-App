@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 extension UIColor {
-  static let tipoGrafeiRed = UIColor (red: 252.0/255.0, green: 111.0/255.0, blue: 111.0/255.0, alpha: 1.0)
+    static let tipoGrafeiRed = UIColor (red: 252.0/255.0, green: 111.0/255.0, blue: 111.0/255.0, alpha: 1.0)
 }
