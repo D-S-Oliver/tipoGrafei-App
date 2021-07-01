@@ -17,22 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K9L-JR-hED">
-                                <rect key="frame" x="0.0" y="44" width="414" height="788"/>
+                                <rect key="frame" x="16" y="76" width="382" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCells" id="FgV-88-nvw">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="382" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FgV-88-nvw" id="LpC-jL-V5m">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-le-bvD">
-                                <rect key="frame" x="0.0" y="848" width="414" height="30"/>
-                                <state key="normal" title="Match"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-le-bvD">
+                                <rect key="frame" x="82" y="766" width="250" height="64"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="NZM-AM-LLy"/>
+                                    <constraint firstAttribute="height" constant="64" id="PB1-Yd-iUA"/>
+                                </constraints>
+                                <state key="normal" title="Encontre Uma Fonte"/>
                                 <connections>
                                     <segue destination="7aX-2V-hp5" kind="presentation" id="GqI-YK-Me6"/>
                                 </connections>
@@ -41,13 +46,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8ol-ys-75J"/>
-                            <constraint firstItem="0Pq-le-bvD" firstAttribute="top" secondItem="K9L-JR-hED" secondAttribute="bottom" constant="16" id="WPr-RS-UYS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Pq-le-bvD" secondAttribute="trailing" id="Xg0-kI-vW3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9L-JR-hED" secondAttribute="trailing" id="e6l-jO-Vnl"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kaB-4I-n4c"/>
-                            <constraint firstItem="0Pq-le-bvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s2o-3l-W0U"/>
-                            <constraint firstItem="0Pq-le-bvD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="16" id="sPs-yQ-dne"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Pq-le-bvD" secondAttribute="bottom" constant="32" id="0GH-cb-y0z"/>
+                            <constraint firstItem="0Pq-le-bvD" firstAttribute="top" secondItem="K9L-JR-hED" secondAttribute="bottom" constant="32" id="0Kr-iM-nwE"/>
+                            <constraint firstItem="K9L-JR-hED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Udd-bZ-WG6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9L-JR-hED" secondAttribute="trailing" constant="16" id="bH8-tk-jE0"/>
+                            <constraint firstItem="0Pq-le-bvD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewI-bE-PdG"/>
+                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="wfB-QU-bpZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Yh0-d8-dDo">
@@ -56,7 +60,7 @@
                             <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Inline-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-fg-zxt">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Inline-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-fg-zxt">
                                     <rect key="frame" x="-82" y="-25" width="164" height="50"/>
                                 </imageView>
                             </subviews>
@@ -64,11 +68,14 @@
                             <constraints>
                                 <constraint firstItem="3ww-fg-zxt" firstAttribute="top" secondItem="uuD-Sh-bjZ" secondAttribute="top" constant="-25" id="33Y-Bh-51w"/>
                                 <constraint firstItem="3ww-fg-zxt" firstAttribute="centerX" secondItem="uuD-Sh-bjZ" secondAttribute="centerX" id="4c9-Gp-ju6"/>
+                                <constraint firstItem="3ww-fg-zxt" firstAttribute="leading" secondItem="uuD-Sh-bjZ" secondAttribute="leading" constant="-82" id="Ips-Cr-Yp1"/>
+                                <constraint firstAttribute="trailing" secondItem="3ww-fg-zxt" secondAttribute="trailing" constant="-82" id="e3q-zs-M7m"/>
                                 <constraint firstItem="3ww-fg-zxt" firstAttribute="centerY" secondItem="uuD-Sh-bjZ" secondAttribute="centerY" id="lxW-xu-dqT"/>
                             </constraints>
                         </view>
                     </navigationItem>
                     <connections>
+                        <outlet property="matchFontButton" destination="0Pq-le-bvD" id="3iS-sv-9Iq"/>
                         <outlet property="tableView" destination="K9L-JR-hED" id="sAj-Ic-Amv"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="VcL-a8-4H4"/>
                         <segue destination="Qhm-IR-zuN" kind="show" identifier="presentDetailSegue" id="hh6-De-pgq"/>
@@ -98,7 +105,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Inline-Logo" width="164" height="49"/>
+        <image name="Inline-logo" width="201" height="31"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

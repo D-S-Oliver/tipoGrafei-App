@@ -38,9 +38,9 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0C-ta-0k3">
-                                    <rect key="frame" x="-20" y="10" width="42" height="47"/>
+                                    <rect key="frame" x="-20" y="10" width="42" height="20"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="47" id="5h6-5Q-fnt"/>
+                                        <constraint firstAttribute="height" constant="20" id="5h6-5Q-fnt"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
