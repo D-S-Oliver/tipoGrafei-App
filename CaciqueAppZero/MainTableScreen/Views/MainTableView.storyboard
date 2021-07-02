@@ -51,25 +51,25 @@
                             <constraint firstItem="K9L-JR-hED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Udd-bZ-WG6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9L-JR-hED" secondAttribute="trailing" constant="16" id="bH8-tk-jE0"/>
                             <constraint firstItem="0Pq-le-bvD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewI-bE-PdG"/>
-                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="wfB-QU-bpZ"/>
+                            <constraint firstItem="K9L-JR-hED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="jZd-QB-klu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Yh0-d8-dDo">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="uuD-Sh-bjZ">
+                        <view key="titleView" contentMode="scaleToFill" ambiguous="YES" id="uuD-Sh-bjZ">
                             <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Inline-logo" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-fg-zxt">
-                                    <rect key="frame" x="-82" y="-25" width="164" height="50"/>
+                                    <rect key="frame" x="7" y="-25" width="201" height="50"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="3ww-fg-zxt" firstAttribute="top" secondItem="uuD-Sh-bjZ" secondAttribute="top" constant="-25" id="33Y-Bh-51w"/>
                                 <constraint firstItem="3ww-fg-zxt" firstAttribute="centerX" secondItem="uuD-Sh-bjZ" secondAttribute="centerX" id="4c9-Gp-ju6"/>
-                                <constraint firstItem="3ww-fg-zxt" firstAttribute="leading" secondItem="uuD-Sh-bjZ" secondAttribute="leading" constant="-82" id="Ips-Cr-Yp1"/>
-                                <constraint firstAttribute="trailing" secondItem="3ww-fg-zxt" secondAttribute="trailing" constant="-82" id="e3q-zs-M7m"/>
+                                <constraint firstAttribute="trailing" secondItem="3ww-fg-zxt" secondAttribute="trailing" constant="277" id="QTi-8T-ynY"/>
+                                <constraint firstItem="3ww-fg-zxt" firstAttribute="leading" secondItem="uuD-Sh-bjZ" secondAttribute="leading" constant="7" id="Xpr-6E-FJo"/>
                                 <constraint firstItem="3ww-fg-zxt" firstAttribute="centerY" secondItem="uuD-Sh-bjZ" secondAttribute="centerY" id="lxW-xu-dqT"/>
                             </constraints>
                         </view>
